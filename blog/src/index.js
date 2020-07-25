@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Form from './pages/form.js'
+// import Welcome from './pages/welcome.js'
+import BaseLayout from './components/layout.js'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BaseLayout>
+      <Form />
+    </BaseLayout>
   </React.StrictMode>,
   document.getElementById('root')
 );
