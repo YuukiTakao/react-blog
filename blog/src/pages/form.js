@@ -31,10 +31,8 @@ function Form() {
         display: flex;
         justify-content: center;
         padding: 20px;
+        position: relative;
         height: 450px;
-      }
-      .form_wrapper::before{
-        clear: both;
       }
       .form_area{
         display: flex;
@@ -42,20 +40,21 @@ function Form() {
         height: 250px;
         width: 400px;
         padding-right: 30px;
+
       }
       .btn_area {
         align-self:flex-end;
         float: right;
+        margin-top: auto;
       }
       .sign_up::after{
         content: "";
         box-sizing: content-box;
         width: 1px;
         height: 200px;
-        margin-top: 148px;
         vertical-align: middle;
         position: absolute;
-        top: 0;
+        top: 70px;
         bottom: 0;
         background-color: gray;
         left: 50%;
