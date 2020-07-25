@@ -17,19 +17,26 @@ function SignUp() {
   return (
     <>
       <form onSubmit={submitSignUp}>
-        <label>
-          User Name
-          <input type="text" value={userName} onChange={changeUserName} required />
-        </label>
-        <label>
-          Email
-          <input type="email" value={email} onChange={changeEmail} required />
-        </label>
-        <label>
-          Password
-          <input type="password" value={password} onChange={changePassword} required />
-        </label>
-        <input type="submit" value="SignUp" />
+        <div className="form_area sign_up">
+          <ul>
+            <li>
+              <label for="user_name">User Name</label>
+              <input id="user_name" type="text" value={userName} onChange={changeUserName} required />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input id="email" type="email" value={email} onChange={changeEmail} required />
+            </li>
+            <li>
+              <label for="password">Password</label>
+              <input id="password" type="password" value={password} onChange={changePassword} required />
+            </li>
+
+          </ul>
+          <div className="btn_area">
+            <input type="submit" value="SignUp" />
+          </div>
+        </div>
       </form>
     </>
   );
