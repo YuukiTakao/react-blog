@@ -5,7 +5,7 @@ function BaseLayout(props) {
     <>
       <div className="wrapper">
         <header>
-          <h2>Implementing login forms with React</h2>
+          <h2>Implementing login in React</h2>
         </header>
         {props.children}
         <footer>

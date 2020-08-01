@@ -9,7 +9,7 @@ function SignIn() {
 
   const submitSignIn = e => {
     e.preventDefault();
-    // alert(`${email}, ${password}`)
+    alert(`${email}, ${password}`)
   }
 
   return (
