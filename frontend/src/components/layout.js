@@ -5,12 +5,14 @@ function BaseLayout(props) {
     <>
       <div className="wrapper">
         <header>
-          <h2>Implementing login in React</h2>
+          <h1>Implementing login in React</h1>
         </header>
         {props.children}
         <footer>
-          Its footer
-      </footer>
+          <span className="copyright">
+            ©Yuuki Takao. 2020
+          </span>
+        </footer>
       </div>
       <style jsx>{`
         header{
@@ -23,6 +25,9 @@ function BaseLayout(props) {
         .wrapper{
           width: 1002px;
           margin: 0 auto;
+        }
+        .copyright {
+          float: right;
         }
       `}</style>
     </>
